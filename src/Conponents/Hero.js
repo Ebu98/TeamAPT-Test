@@ -9,10 +9,10 @@ function Hero() {
           <h3>Unlock to</h3>
           <h2>Power your dreams!</h2>
         </div>
-        <p>
+        <p className="hero-para">
           stand a chance to win
           <br />
-          #3,000,000 everyday for the next 5days
+          N3,000,000 everyday for the next 5days
         </p>
         <div className="card">
           <h3>🚀 How To Play</h3>
@@ -32,15 +32,33 @@ function Hero() {
           </div>
         </div>
         <button className="button">Play The Game </button>
-        <div>
+        <div className="image-container">
           <div className="second-image">
           </div>
-          <div>
-            <img src="./assets/coin-pot.png" alt="" className="pot-image" />
+          <div className="coin-right">
+            <img src="./assets/coin-right.svg" alt="" className="ri-image" />
           </div>
-        </div>
+          <div className="coin-left">
+            <img src="./assets/coin-left.svg" alt="" className="li-image" />
+          </div>
+          <div className="coin-pot">
+            <img src="./assets/coin-pot.svg" alt="" className="pot-image" />
+          </div>
+        <div className="" 
+        style={{position: "absolute",
+          bottom:"0",
+          // height: "500px", 
+          overflow: "hidden"}}>
+
+          <img className="rotateLightBeam" src="/assets/Group2.svg" alt="" /> 
+          </div>
+          </div>
+
+
+
+</div>
       </div>
-    </div>
+    
   );
 }
 

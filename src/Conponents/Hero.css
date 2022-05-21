@@ -1,49 +1,58 @@
 .hero-body:before {
-    content: '';
-    background: url('../images/background.png') no-repeat center center/cover;
-    /* background: url('../images/Group2.svg') no-repeat center center/cover; */
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
+  content: "";
+  background: url("../images/background.png") no-repeat center center/cover;
+  /* background: url('../images/Group2.svg') no-repeat center center/cover; */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
-.container{
-    color: white;
-    
-  }
-  .text-body{
-    text-align: center;
-    letter-spacing: -0.015em;
-    margin-top: 130px;
-  }
-  .text-body h2{
-    font-weight: 600;
-    font-size: 70px;
-    margin-top:4px; 
-    /* line-height: 91%; */
-    
-  }
-  .text-body h3{
-    font-weight: 150;
-    font-size: 70px;
-    line-height: 100%;
-    margin-bottom: 5px;
-  }
-  .second-image{
-    transition: all 5s ease-in-out;
-  }
-  .second-image:hover{
-    transform: rotate(25deg);
-  }
-/* .second-image-container{
+.container {
+  color: white;
+}
+.text-body {
+  text-align: center;
+  letter-spacing: -0.015em;
+  margin-top: 100px;
+}
+.text-body h2 {
+  font-weight: 600;
+  font-size: 70px;
+  margin-top: -15px;
+}
+.text-body h3 {
+  font-weight: 150;
+  font-size: 70px;
+  line-height: 100%;
+  margin-bottom: -30px;
+}
+.second-image {
+  transition: all 5s ease-in-out;
+}
+.second-image:hover {
+  transform: rotate(25deg);
+}
+.hero-para {
+  margin-top: -27px;
+  font-size: 20px;
+}
+.coin-pot {
   position: relative;
-  margin-top: 80px;
-} */
-.rectangle-image{
-  margin-top:50px;
+  margin-top: -80px;
+  z-index: 2;
+}
+.coin-left {
+  display: flex;
+  margin-top: -20px;
+  margin-left: 10%;
+}
+.coin-right {
+  display: flex;
+  margin-left: 80%;
+  margin-top: 40px;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.17);
@@ -51,80 +60,133 @@
   box-sizing: border-box;
   width: 30%;
   margin-left: 500px;
-  height: 300px;
-  /* margin-bottom:100px; */
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.39) -213.5%, rgba(255, 255, 255, 0));
+  height: 260px;
+  position: relative;
+  margin-bottom: 50px;
+  border-radius: 8px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.39) -213.5%,
+    rgba(255, 255, 255, 0)
+  );
+}
+.card h3 {
+  margin-top: 30px;
+}
+.image-container{
+  position: relative;
 }
 
 .card:hover {
-  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
 }
 .card2 {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 #070059;
   transition: 0.3s;
   width: 90%;
   height: 100px;
-  margin-top:40px;
-  margin-left:20px;
-  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 20px;
+  border-radius: 10px;
   font-size: 12px;
   line-height: 160%;
-  gap: 16px;
+  position: absolute;
 }
-.card2 p{
-  margin-top:50px;
-  /* color: red; */
+.card2 p {
+  margin-top: 25px;
+  color: #ffffff;
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: -0.02em;
 }
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-.button{
+.button {
   margin-top: 30px;
   width: 20%;
   height: 56px;
+  border: none;
   border-radius: 6px;
   font-weight: 600;
   font-size: 16px;
   line-height: 17px;
   text-align: center;
-  background: #ECAB03;
-  color: #FFFFFF
+  background: #ecab03;
+  color: #ffffff;
 }
 
-@keyframes spin {
-	from { transform: rotate(0deg); }
-	to { transform: rotate(360deg); }
+@keyframes rotation {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(-160deg);
+  }
+} 
+.rotateLightBeam {
+  width: 100%;
+  margin: 60px auto;
+  /* right: 150px; */
+  margin-top: 200px;
+  z-index: 1;
+  transform-origin: bottom center;
+  position: relative;
+  animation-name: rotation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-/* basic structure for the rays setup */
-.raysDemoHolder	{ 
-	position: relative; 
-	width: 490px; 
-	height: 490px; 
-	margin: 100px 0 0 200px; 
-}
-.pot-image2 { 
-	width: 300px; 
-	height: 233px; 
-	text-indent: -3000px; 
-	/* background: url(logo.png) 0 0 no-repeat;  */
-	/* display: block; 
-	position: absolute;  */
-	top: 0; 
-	left: 0; 
-	z-index: 2; 
-}
-.rays	{ /* with animation properties */
-	background: url('../images/Rectangle2.png') 0 0 no-repeat; 
-	position: absolute; 
-	top: -100px; 
-	left: -100px; 
-	width: 490px; 
-	height: 490px; 
-	
-	/* microsoft ie */
-	animation-name: spin; 
-	animation-duration: 40000ms; /* 40 seconds */
-	animation-iteration-count: infinite; 
-	animation-timing-function: linear;
+@media only screen and (max-width: 500px) {
+  .card {
+    font-size: 16px;
+    width: 120%;
+    height: 350px;
+    margin-left: 150px;
+    margin-bottom: 80px;
+  }
+  .card2 {
+    width: 80%;
+    margin-left: 60px;
+    height: 200px;
+  }
+  .text-body {
+    width: 618px;
+    margin-top: 10px;
+    margin-left: 150px;
+  }
+  .button {
+    margin-top: 30px;
+    margin-left: 250px;
+    width: 400px;
+    height: 100px;
+  }
+  .hero-para {
+    margin-left: 260px;
+    width: 400px;
+  }
+  .coin-right {
+    position: relative;
+    left: 500px;
+    top: 157px;
+  }
+  .coin-left {
+    position: relative;
+    left: -60px;
+    right: -809px;
+    top: 587px;
+    bottom: 86px;
+  }
+  .coin-pot {
+    margin-top: 650px;
+  }
+  .card2 p {
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 15px;
+  }
 }
