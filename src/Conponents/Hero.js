@@ -13,9 +13,9 @@ function Hero() {
           <img src="./assets/frame-right.png" alt="" />
         </div>
       </div>
-      <div className="star-icon">
+      {/* <div className="star-icon">
         <img src="./assets/top-stars.png" alt="" />
-      </div>
+      </div> */}
 
       <div className="container">
         <Fade bottom>
@@ -25,12 +25,16 @@ function Hero() {
           </div>
         </Fade>
         <Fade bottom>
-          <p className="hero-para">
-            stand a chance to win
-            <br />
-            N3,000,000 everyday for the next 5days
-          </p>
+          <div className="text-container">
+            <p className="hero-para">
+              stand a chance to win
+              <br />
+              N3,000,000 everyday for the next 5days
+            </p>
+          </div>
         </Fade>
+        <img src="./assets/star1.png" alt="" className="yellow-star"  />
+            <img src="./assets/star2.png" alt="" />
 
         <div className="card">
           <h3>🚀 How To Play</h3>
@@ -49,30 +53,24 @@ function Hero() {
             </p>
           </div>
         </div>
+        <img src="./assets/coin-right.svg" alt="" className="coin-right" />
+        <img src="./assets/coin-left.svg" alt="" className="coin-left" />
         <button className="button">
           Play The Game{" "}
-          <img src="./assets/Vector.png" alt="" className="arrow-image" />{" "}
+          <img src="./assets/Vector.png" alt="" className="arrow-image" />
         </button>
         <div className="image-container">
-          <div className="coin-right">
-            <img src="./assets/coin-right.svg" alt="" className="ri-image" />
-          </div>
-          <div className="coin-left">
-            <img src="./assets/coin-left.svg" alt="" className="li-image" />
-          </div>
           <div className="star-image">
-          <img src="./assets/star1.png" alt="" />
-          <img src="./assets/star2.png" alt="" />
+            
           </div>
-          <div className="coin-pot">
-            <img src="./assets/coin-pot.svg" alt="" className="pot-image" />
-          </div>
+          <figure className="coin-pot">
+            <img src="./assets/coin-pot.svg" alt="" className="pot-image"  />
+          </figure>
           <div
             className=""
             style={{
               position: "absolute",
               bottom: "0",
-              // height: "500px",
               overflow: "hidden",
             }}
           >
