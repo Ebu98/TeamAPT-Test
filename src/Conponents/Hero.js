@@ -13,9 +13,9 @@ function Hero() {
           <img src="./assets/frame-right.png" alt="" />
         </div>
       </div>
-      {/* <div className="star-icon">
+      <div className="star-icon">
         <img src="./assets/top-stars.png" alt="" />
-      </div> */}
+      </div>
 
       <div className="container">
         <Fade bottom>
